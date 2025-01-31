@@ -1,4 +1,4 @@
-# Working with External APIs and JSON Processing
+# Working with JSON
 
 ## Objectives
 - Familiarize and identify JSON as a primary data format for API development
@@ -7,8 +7,24 @@
 - Utilize external APIs and manipulate data accordingly
 
 ## Instructions
-1. Create an API that interacts with an external API and processes the retrieved data.
-2. Implement the following endpoints:
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/jpcanamaque/itec116_it4e_lab.git
+   cd itec116_it4e_lab/lab3
+   ```
+
+2. **Create a virtual environment (optional but recommended)**:
+   ```sh
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+   ```
+
+3. **Install dependencies**:
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+4. **Implement the following endpoints**:
    - `GET /posts/` - Retrieve all posts from an external API.
    - `GET /posts/{postId}` - Retrieve a specific post by ID.
    - `GET /comments/` - Retrieve all comments from an external API.
@@ -17,39 +33,13 @@
    - `GET /formatted_comment/{postID}` - Retrieve comments for a post and format the data.
    - `GET /detailed_post/{userID}` - Retrieve all posts for a user along with comments for each post.
 
-3. Return values should be properly structured JSON objects.
-4. Implement proper error handling and validation.
+5. **Ensure proper JSON formatting, validation, and error handling**.
 
 ## Features
 - Fetch and process data from an external API.
 - Format JSON data to a more structured format.
 - Use FastAPI for efficient API development.
 - Implement proper validation and error handling.
-
-## Requirements
-- Python 3.7+
-- FastAPI
-- Uvicorn
-- Requests
-
-## Installation
-
-1. Clone this repository:
-   ```sh
-   git clone https://github.com/yourusername/external-api-project.git
-   cd external-api-project
-   ```
-
-2. Create a virtual environment (optional but recommended):
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows use: venv\Scripts\activate
-   ```
-
-3. Install dependencies:
-   ```sh
-   pip install fastapi uvicorn requests
-   ```
 
 ## Running the API
 Start the FastAPI server using Uvicorn:
